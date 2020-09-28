@@ -83,7 +83,10 @@ nav ul li a {
   border-radius: 3px;
   text-transform: uppercase;
 }
-
+.menu{
+  width: 100%;
+  min-width: 600px;
+}
 .menu a:hover {
   background-color: #6e7f80;
   color: white;
@@ -119,7 +122,7 @@ nav ul li a {
 
 .index_about {
   width: 50%;
-  margin-left: 140px;
+  margin-left: 30px;
   margin-top: 30px;
   color: #222527;
   font-size: 17px;
@@ -180,13 +183,15 @@ nav ul li a {
   width: 100%;
   text-align: center !important;
   margin-top: 0px;
-  padding-bottom: 0px;
-  /* height: 90vh; */
-  margin-bottom: 20px;
+
   margin-top: 20px;
   position: static;
 }
-
+.logo_container{
+  width: 100%;
+  text-align: center;;
+  padding-top: 30px;
+}
 .containter_video {
   min-height: 90vh;
   overflow: auto;
@@ -201,8 +206,8 @@ nav ul li a {
   font-weight: bolder;
   width: 100%;
   text-align: center;
-  padding-bottom: 10px;
-  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .rev_text02 {
@@ -211,7 +216,7 @@ nav ul li a {
   font-size: 40px;
   width: 100%;
   text-align: center;
-  padding-top: 10px;
+  margin-bottom: 20px;
 }
 
 #videosList {
