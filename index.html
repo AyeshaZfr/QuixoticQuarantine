@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<div class="container">
+
+  <nav class="menu">
+    <a href="index.html"><img id="logo" style='vertical-align:middle;' src='logo.png'height="70px"></a>    <ul>
+        <li><a href="index.html" target=blank>Home</a></li>
+        <li><a href="AboutUs.html" target=blank>About</a></li>
+        <li><a href="Team.html" target=blank>Team</a></li>
+        <li><a href="bookings.html" target=blank>Bookings</a></li>
+    </ul>
+</nav>
+</div>
+
+  <body class="parallax">
+    <div class="clear"></div>
+
+      <div class="containter_video">
+        <div class="rev_text">
+          The most anticipated movie of the year!
+        </div>
+        <div class="rev_text02">
+          Watch the trailer below
+        </div>
+        <div id="video"><video src="30mins.mp4" type="video/mp4" width="50%" height="100%" controls></video></div>
+
+      </div>
+      <div class="index_bg">
+        <div class="index_reviews">
+          <div class="slider">
+            <div class="slides">
+              <!--radio buttons start-->
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+              <!--radio buttons end-->
+              <!--slide images start-->
+              <div class="slide first">
+                <img src="01.png" alt="" width="400px" height="200px">
+              </div>
+              <div class="slide">
+                <img src="02.png" alt="" width="400px" height="200px">
+              </div>
+              <div class="slide">
+                <img src="03.png" alt="" width="400px" height="200px">
+              </div>
+              <div class="slide">
+                <img src="04.png" alt="" width="400px" height="200px">
+              </div>
+              <!--slide images end-->
+
+              <!--automatic navigation start-->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+              </div>
+              <!--automatic navigation end-->
+
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+          </div>
+          <div class="index_about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <br>
+        </div>
+        <div class="cities"><b>Now Streaming In</b></div>
+        <div class="example1">
+          <h3>London | New York | Abu Dhabi | Shanghai | Prague | Paris | Milan | Cannes | Cairo | Budapest | Istanbul | Tetovo | Chicago | Washington DC | Sydney | Berlin | Nairobi | </h3>
+        </div>
+        <div class="BookNow">Reserve your ticket  <a href="bookings.html" target=_blank class="book">NOW!</a></div>
+      </div>
+      <!--image slider end-->
+
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script src="script.js"></script>
+      <script src="showSlides.js"></script>
+</body>
+
+<div class="footer">
+  <div class="text_socialmedia"><b>Social Media</b></div>
+  <div class="footer_content">
+
+
+    <div class="social-box">
+      <a href="#"><img src="fb_logo.png" width="100px" style="padding-right:20px; padding-left:10px;"></a>
+      <a href="#"><img src="insta_logo.png" width="90px" style="padding-right:20px;"></i></a>
+      <a href="#"><img src="yt_logo.png" width="90px" style="padding-right:20px;"></i></a>
+    </div>
+    <hr class="line1">
+  </div>
+  <div class="copyright">Copyright © 2020 QuixoticQuarantine. All Rights Reserved</div>
+
+
+</div>
+
+</html>
