@@ -480,7 +480,7 @@ nav ul li a:hover {
 /* team page? */
 
 #team{
-  font-size: 60px !important;
+  font-size: 60px;
   width: 100%;
   font-weight: bolder;
   text-align: center;
@@ -666,9 +666,6 @@ nav ul li a:hover {
   color: white;
 }
 
-
-
-/* @keyframes moveSlideshow {
-100% {
-    -webkit-transform: translateX(-200%);
-} */
+#footerlinks:hover{
+  cursor: pointer;
+}
