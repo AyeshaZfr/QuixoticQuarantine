@@ -335,7 +335,9 @@ nav ul li a:hover {
   text-decoration: none;
   margin-top: 30px;
 }
-
+.BookNow a:hover{
+  cursor: pointer;
+}
 .book {
   text-decoration: underline;
   color: black !important;
