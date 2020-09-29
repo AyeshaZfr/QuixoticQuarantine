@@ -1,3 +1,4 @@
+// js FOR REVIEWS PAGE TO MANUAALLY AND automatically MOVE SLIDES
 var boxIndex = 0;
 showBox();
 
@@ -14,7 +15,7 @@ function showBox() {
   for (var i = 0; i < 4; i++) {
     box[boxIndex + i - 1].style.display = "block";
   }
-  setTimeout(showBox, 6000); // Change image every 3 seconds
+  setTimeout(showBox, 5000); // Change image every 3 seconds
 }
 
 // Next/previous controls
@@ -39,3 +40,16 @@ function showBoxManual(n) {
     box[j].style.display = "block";
   }
 }
+
+// index page images slider JS
+
+var counter = 1;
+setInterval(function() {
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+  if (counter > 4) {
+    counter = 1;
+  }
+}, 5000);
+
+  // <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"

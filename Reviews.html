@@ -5,7 +5,7 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 
-
+<!-- container clas s to contain all nav bar/ menu items -->
 <div class="container">
 
   <nav class="menu">
@@ -18,23 +18,31 @@
     </ul>
   </nav>
 </div>
+<!-- end of container^ -->
 
+<!-- body class begins -->
 <body class="parallax">
   <div class="clear"></div>
+
+  <!-- begin of review slider element -->
   <div class="reviewsPage">
 
-
+<!-- text above slides -->
     <div class="rev_text02">
       <b>Check out what others have to say about Quixotic Quarantine</b>
     </div>
-    <!--image slider start-->
+
+    <!--images slider start-->
     <div class="box_container">
+
+      <!-- navigation buttons -->
       <a class="prev" onclick="navigate(-1)">&#10094;</a>
       <a class="next" onclick="navigate(1)">&#10095;</a>
 
+      <!-- begin of boxes -->
       <div class="boxes">
 
-
+        <!-- individual boxes each with a text and unique class -->
         <div class="box">
           <div class="box_01">
             <div class="t">"The standard, expected beats and tropes are hit, but what happens within those elements makes the film so powerful and so rewarding." ~The Abu Dhabi Times</div>
@@ -47,6 +55,7 @@
               Doopy"</div>
           </div>
         </div>
+
         <div class="box">
           <div class="box_03">
             <div class="t">"Quixotic Qaurantine is a thrill ride - a passionate, heartfelt story of fandom at its very best."~Mojo Jojo</div>
@@ -67,7 +76,7 @@
 
         <div class="box">
           <div class="box_06">
-            <div class="t">This is an emotional experience."~Me to myself</div>
+            <div class="t">This is an emotional experience."~Daddy D</div>
           </div>
         </div>
 
@@ -83,18 +92,16 @@
           </div>
         </div>
 
-      </div>
-    </div>
-  </div>
+      </div> <!-- end boxes class -->
+    </div> <!-- end box_container class -->
+  </div> <!-- end reviewsPage class -->
 
 
 
-
+<!-- begin footer -->
   <div class="footer">
     <div class="text_socialmedia"><b>Social Media</b></div>
     <div class="footer_content">
-
-
       <div class="social-box">
         <a href="#"><img src="fb_logo.png" width="100px" style="padding-right:20px; padding-left:10px;"></a>
         <a href="#"><img src="insta_logo.png" width="90px" style="padding-right:20px;"></i></a>
@@ -103,10 +110,10 @@
       <hr class="line1">
     </div>
     <div class="copyright">Copyright © 2020 QuixoticQuarantine. All Rights Reserved</div>
+  </div> <!-- close footer-->
 
+  <script src="script.js"></script> <!-- JS for automatically and manually sliding images-->
 
-  </div>
-  <script src="script.js"></script>
 </body>
 
 </html>

@@ -5,116 +5,132 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 
+<!-- container clas s to contain all nav bar/ menu items -->
 <div class="container">
-
   <nav class="menu">
-    <a href="index.html"><img id="logo" style='vertical-align:middle;' src='logo.png'height="70px"></a>    <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="Reviews.html" >Reviews</a></li>
-        <li><a href="Team.html" >Team</a></li>
-        <li><a href="bookings.html">Bookings</a></li>
+    <a href="index.html"><img id="logo" style='vertical-align:middle;' src='logo.png' height="70px"></a>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="Reviews.html">Reviews</a></li>
+      <li><a href="Team.html">Team</a></li>
+      <li><a href="bookings.html">Bookings</a></li>
     </ul>
-</nav>
+  </nav>
 </div>
+<!-- end of container^ -->
 
-  <body class="parallax">
-    <div class="clear"></div>
+<!-- body class begins -->
 
-      <div class="containter_video">
-        <div class="logo_container"><img id="logo" style='vertical-align:middle;' src='logo.png'height="200px"></div>
-        <div class="rev_text">
-          The most anticipated movie of the year!
-        </div>
+<body class="parallax">
+  <div class="clear"></div>
 
-        <div id="video"><video src="30mins.mp4" type="video/mp4" width="50%" height="100%" controls></video></div>
-        <div class="rev_text02">Watch the trailer</div>
-      </div>
+  <!-- begin trailer/info containing element -->
+  <div class="containter_video">
 
-      <div class="index_bg">
-        <div class="CharacText"><b>Get to know the stars of Quixotic Quarantine</b></div>
-        <div class="index_reviews">
-          <div class="slider">
-            <div class="slides">
-              <!--radio buttons start-->
-              <input type="radio" name="radio-btn" id="radio1">
-              <input type="radio" name="radio-btn" id="radio2">
-              <input type="radio" name="radio-btn" id="radio3">
-              <input type="radio" name="radio-btn" id="radio4">
-              <!--radio buttons end-->
-              <!--slide images start-->
-              <div class="slide first">
-                <img src="01.png" alt="" width="400px" height="200px">
-              </div>
-              <div class="slide">
-                <img src="02.png" alt="" width="400px" height="200px">
-              </div>
-              <div class="slide">
-                <img src="03.png" alt="" width="400px" height="200px">
-              </div>
-              <div class="slide">
-                <img src="04.png" alt="" width="400px" height="200px">
-              </div>
-              <!--slide images end-->
+    <!-- add logo -->
+    <div class="logo_container"><img id="logo" style='vertical-align:middle;' src='logo.png' height="200px"></div>
 
-              <!--automatic navigation start-->
-              <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-              </div>
-              <!--automatic navigation end-->
-
-            </div>
-            <!--manual navigation start-->
-            <div class="navigation-manual">
-              <label for="radio1" class="manual-btn"></label>
-              <label for="radio2" class="manual-btn"></label>
-              <label for="radio3" class="manual-btn"></label>
-              <label for="radio4" class="manual-btn"></label>
-            </div>
-            <!--manual navigation end-->
-          </div>
-          <div class="index_about">Quixotic Quarantine is a movie that elaborate on how everyday inanimate objects would navigate the exceptional circumstances of the present pandemic. Being limited to a physical space may seem daunting and downright boring but you'll be amazed at the wonderful ways through which these objects begin and end their days. </div>
-          <br>
-        </div>
-        <marquee behavior="slide" direction="left" scrollamount="30" width="100%"><div class="cities"><b>Now Streaming In</b></div></marquee>
-      <div class="example1">
-          <h3>London | New York | Abu Dhabi | Shanghai | Prague | Paris | Milan | Cannes | Cairo | Budapest | Istanbul | Tetovo | Chicago | Washington DC | Sydney | Berlin | Nairobi |London | New York | </h3> </div>
-        <marquee behavior="slide" direction="left" scrollamount="30"><div class="BookNow">Reserve your ticket  <a href="bookings.html" target=_blank class="book">NOW!</a></marquee></div>
-      </div>
-      <!--image slider end-->
-
-      <script type="text/javascript">
-      var counter = 1;
-      setInterval(function(){
-        document.getElementById('radio' + counter).checked = true;
-        counter++;
-        if(counter > 4){
-          counter = 1;
-        }
-      }, 5000);
-      </script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-      <script src="script.js"></script>
-      <script src="showSlides.js"></script>
-</body>
-
-<div class="footer">
-  <div class="text_socialmedia"><b>Social Media</b></div>
-  <div class="footer_content">
-
-
-    <div class="social-box">
-      <a href="#"><img src="fb_logo.png" width="100px" style="padding-right:20px; padding-left:10px;"></a>
-      <a href="#"><img src="insta_logo.png" width="90px" style="padding-right:20px;"></i></a>
-      <a href="#"><img src="yt_logo.png" width="90px" style="padding-right:20px;"></i></a>
+    <!-- add text -->
+    <div class="rev_text">
+      The most anticipated movie of the year!
     </div>
-    <hr class="line1">
+    <!-- add video -->
+    <div id="video"><video src="30mins.mp4" type="video/mp4" width="50%" height="100%" controls></video></div>
+    <div class="rev_text02">Watch the trailer</div>
   </div>
-  <div class="copyright">Copyright © 2020 QuixoticQuarantine. All Rights Reserved</div>
+  <!-- close video/text containing element -->
 
+  <!-- begin second section of page with characters and text -->
+  <div class="index_bg">
+    <div class="CharacText"><b>Get to know the stars of Quixotic Quarantine</b></div>
 
-</div>
+    <!-- begin character images slider and some text -->
+    <div class="index_reviews">
+
+      <div class="slider">
+
+        <div class="slides">
+
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="01.png" alt="" width="400px" height="200px">
+          </div>
+          <div class="slide">
+            <img src="02.png" alt="" width="400px" height="200px">
+          </div>
+          <div class="slide">
+            <img src="03.png" alt="" width="400px" height="200px">
+          </div>
+          <div class="slide">
+            <img src="04.png" alt="" width="400px" height="200px">
+          </div>
+          <!--slide images end-->
+
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+
+        </div> <!-- end slides class -->
+
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+
+      </div><!-- end slider class -->
+
+      <div class="index_about">Quixotic Quarantine is a movie that elaborate on how everyday inanimate objects would navigate the exceptional circumstances of the present pandemic. Being limited to a physical space may seem daunting and downright
+        boring but you'll be amazed at the wonderful ways through which these objects begin and end their days. </div>
+
+      <br>
+
+    </div> <!-- end index_reviews class -->
+
+    <!-- now Streaming/cities and resserve tickets -->
+    <marquee behavior="slide" direction="left" scrollamount="30" width="100%">
+      <div class="cities"><b>Now Streaming In</b></div>
+    </marquee>
+    <div class="example1">
+      <h3>London | New York | Abu Dhabi | Shanghai | Prague | Paris | Milan | Cannes | Cairo | Budapest | Istanbul | Tetovo | Chicago | Washington DC | Sydney | Berlin | Nairobi |London | New York | </h3>
+    </div>
+    <marquee behavior="slide" direction="left" scrollamount="30">
+      <div class="BookNow">Reserve your ticket <a href="bookings.html" target=_blank class="book">NOW!</a>
+      </div>
+    </marquee>
+  </div>  <!-- END second section of page with characters and text -->
+
+<!-- begin footer -->
+  <div class="footer">
+    <div class="text_socialmedia"><b>Social Media</b></div>
+    <div class="footer_content">
+      <div class="social-box">
+        <a href="#"><img src="fb_logo.png" width="100px" style="padding-right:20px; padding-left:10px;"></a>
+        <a href="#"><img src="insta_logo.png" width="90px" style="padding-right:20px;"></i></a>
+        <a href="#"><img src="yt_logo.png" width="90px" style="padding-right:20px;"></i></a>
+      </div>
+      <hr class="line1">
+    </div>
+    <div class="copyright">Copyright © 2020 QuixoticQuarantine. All Rights Reserved</div>
+  </div><!-- close footer-->
+
+  <script src="script.js"></script> <!-- JS for automatically and manually sliding images-->
+
+</body>
 
 </html>
